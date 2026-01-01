@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    content="Welcome to South India Travels and Tours, one of the best travel agencies in Tamil Nadu, offering expertly
+    crafted South India tour packages since 2016. As a trusted and rapidly growing South India tour operator, we
+    specialize in customized travel packages covering top destinations across Kerala, Tamil Nadu, Karnataka, Andhra
+    Pradesh, and Pondicherry.">
+    <meta name="keywords"
+        content="South India Travels and Tours, South India Tour Packages, Travel Agency Tamil Nadu, Kerala Tourism, Tamil Nadu Temple Tours, Karnataka Heritage Tours, Best Tour Operator Trichy, Custom Holiday Packages South India, Pondicherry Beach Tours, South India Tourism, Family Vacation South India, Honeymoon Packages South India">
+    <title>South India Travels And Tours | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>
+                    <img src="logo.png" alt="South India Travels And Tours" class="logo-img">
+                </h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="hero-carousel">
+            <!-- Slide 1 - Kerala Backwaters -->
+            <div class="hero-slide active" data-slide="1">
+                <div class="hero-background"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920&q=80') center/cover no-repeat;">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-subtitle">Discover the Magic of</h2>
+                    <h2 class="hero-title">Kerala Backwaters</h2>
+                    <p class="hero-description">Experience serene houseboats, lush greenery, and tranquil waterways in
+                        God's Own Country</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Plan Your Trip</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - Tamil Nadu Temples -->
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-background"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920&q=80') center/cover no-repeat;">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-subtitle">Explore the Heritage of</h2>
+                    <h2 class="hero-title">Tamil Nadu Temples</h2>
+                    <p class="hero-description">Witness magnificent architecture and rich cultural traditions spanning
+                        millennia</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Plan Your Trip</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Hill Stations -->
+            <div class="hero-slide" data-slide="3">
+                <div class="hero-background"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920&q=80') center/cover no-repeat;">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-subtitle">Escape to the</h2>
+                    <h2 class="hero-title">Misty Hill Stations</h2>
+                    <p class="hero-description">Breathe in the fresh mountain air amidst tea plantations and rolling
+                        hills</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Plan Your Trip</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 - Beaches -->
+            <div class="hero-slide" data-slide="4">
+                <div class="hero-background"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80') center/cover no-repeat;">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-subtitle">Relax on</h2>
+                    <h2 class="hero-title">Pristine Beaches</h2>
+                    <p class="hero-description">Unwind on golden sands with crystal-clear waters and swaying palm trees
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Plan Your Trip</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 - Heritage Sites -->
+            <div class="hero-slide" data-slide="5">
+                <div class="hero-background"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1609920658906-8223bd289001?w=1920&q=80') center/cover no-repeat;">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-subtitle">Journey Through</h2>
+                    <h2 class="hero-title">Royal Heritage</h2>
+                    <p class="hero-description">Step into the grandeur of palaces, forts, and ancient monuments</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Plan Your Trip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control prev" onclick="changeSlide(-1)" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="carousel-control next" onclick="changeSlide(1)" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button class="indicator active" onclick="goToSlide(1)" aria-label="Go to slide 1"></button>
+            <button class="indicator" onclick="goToSlide(2)" aria-label="Go to slide 2"></button>
+            <button class="indicator" onclick="goToSlide(3)" aria-label="Go to slide 3"></button>
+            <button class="indicator" onclick="goToSlide(4)" aria-label="Go to slide 4"></button>
+            <button class="indicator" onclick="goToSlide(5)" aria-label="Go to slide 5"></button>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Explore the diverse landscapes and rich heritage of South India</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image" id="dest-kerala"></div>
+                    <div class="destination-content">
+                        <h3>Kerala</h3>
+                        <p>God's Own Country - Backwaters, beaches, and hill stations</p>
+                        <div class="destination-tags">
+                            <span class="tag">Backwaters</span>
+                            <span class="tag">Beaches</span>
+                            <span class="tag">Wildlife</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image" id="dest-tamilnadu"></div>
+                    <div class="destination-content">
+                        <h3>Tamil Nadu</h3>
+                        <p>Land of Temples - Ancient architecture and cultural heritage</p>
+                        <div class="destination-tags">
+                            <span class="tag">Temples</span>
+                            <span class="tag">Heritage</span>
+                            <span class="tag">Culture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image" id="dest-karnataka"></div>
+                    <div class="destination-content">
+                        <h3>Karnataka</h3>
+                        <p>Garden City & Beyond - Modern cities and ancient ruins</p>
+                        <div class="destination-tags">
+                            <span class="tag">Heritage</span>
+                            <span class="tag">Nature</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tour Packages</h2>
+                <p class="section-subtitle">Carefully curated experiences for every traveler</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-image" id="pkg-backwaters"></div>
+                    <div class="package-content">
+                        <h3>Kerala Backwaters Escape</h3>
+                        <p class="package-duration">5 Days / 4 Nights</p>
+                        <p class="package-description">Experience the serene backwaters of Alleppey, explore Munnar's
+                            tea gardens, and relax on Kovalam beaches.</p>
+                        <ul class="package-highlights">
+                            <li>Houseboat stay in Alleppey</li>
+                            <li>Tea plantation tour in Munnar</li>
+                            <li>Beach resort in Kovalam</li>
+                            <li>Traditional Kerala cuisine</li>
+                        </ul>
+                        <div class="package-footer">
+
+                            <button class="btn btn-primary" onclick="openBookingModal('Kerala Backwaters Escape')">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-badge">Best Value</div>
+                    <div class="package-image" id="pkg-temples"></div>
+                    <div class="package-content">
+                        <h3>Temple Trail of Tamil Nadu</h3>
+                        <p class="package-duration">6 Days / 5 Nights</p>
+                        <p class="package-description">Discover the magnificent temples of Madurai, Thanjavur, and
+                            Rameswaram with expert guides.</p>
+                        <ul class="package-highlights">
+                            <li>Meenakshi Temple, Madurai</li>
+                            <li>Brihadeeswara Temple, Thanjavur</li>
+                            <li>Ramanathaswamy Temple</li>
+                            <li>Cultural performances</li>
+                        </ul>
+                        <div class="package-footer">
+
+                            <button class="btn btn-primary"
+                                onclick="openBookingModal('Temple Trail of Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-badge">Adventure</div>
+                    <div class="package-image" id="pkg-coorg"></div>
+                    <div class="package-content">
+                        <h3>Coorg & Mysore Heritage</h3>
+                        <p class="package-duration">4 Days / 3 Nights</p>
+                        <p class="package-description">Explore the coffee plantations of Coorg and the royal heritage of
+                            Mysore Palace.</p>
+                        <ul class="package-highlights">
+                            <li>Mysore Palace tour</li>
+                            <li>Coffee plantation stay</li>
+                            <li>Abbey Falls & nature walks</li>
+                            <li>Local cuisine experience</li>
+                        </ul>
+                        <div class="package-footer">
+
+                            <button class="btn btn-primary" onclick="openBookingModal('Coorg & Mysore Heritage')">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Your trusted partner for South India adventures</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Expert Planning</h3>
+                    <p>20+ years of experience crafting perfect South India itineraries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates with no hidden charges guaranteed</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏨</div>
+                    <h3>Quality Stays</h3>
+                    <p>Handpicked hotels and resorts for comfort and authenticity</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Safe Travel</h3>
+                    <p>Well-maintained vehicles with experienced drivers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Local Guides</h3>
+                    <p>Knowledgeable guides who bring history and culture to life</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance throughout your journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Travelers Say</h2>
+                <p class="section-subtitle">Real experiences from real travelers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"An absolutely magical experience! The houseboat stay in Kerala was the
+                        highlight of our trip. Everything was perfectly organized."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The temple tour was incredible. Our guide was so knowledgeable and made
+                        the history come alive. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PM</div>
+                        <div class="author-info">
+                            <h4>Priya Menon</h4>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best vacation ever! The team handled everything seamlessly. The
+                        accommodations were excellent and the food was amazing."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4>Amit Kumar</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to start your South India adventure? Contact us today!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8300266240</p>
+                                <p>+91 9788947886</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>enquiry@southindiatravelsandtours.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Office</h4>
+                                <p>No. 41, Vasantha Nagar, Airport,</p>
+                                <p>Trichy, Tamil Nadu - 620 007</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                                <p>Sun: 10:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="interest">
+                                <option value="">Select Package Interest</option>
+                                <option value="kerala">Kerala Backwaters Escape</option>
+                                <option value="tamilnadu">Temple Trail of Tamil Nadu</option>
+                                <option value="karnataka">Coorg & Mysore Heritage</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>South India Travels</h3>
+                    <p>Your gateway to discovering the enchanting beauty and rich cultural heritage of South India.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="#">Kerala Backwaters</a></li>
+                        <li><a href="#">Tamil Nadu Temples</a></li>
+                        <li><a href="#">Karnataka Heritage</a></li>
+
+                        <li><a href="#">Custom Tours</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 South India Travels and Tours. All rights reserved. <br>
+                    <a href="https://www.southindiatravelsandtours.com" target="_blank"
+                        style="color: inherit; text-decoration: underline; opacity: 0.8;">www.southindiatravelsandtours.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h2>Book Your Tour</h2>
+            <p class="modal-package-name" id="modalPackageName"></p>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name *</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingEmail">Email *</label>
+                        <input type="email" id="bookingEmail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingPhone">Phone *</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingDate">Preferred Date *</label>
+                        <input type="date" id="bookingDate" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingAdults">Adults</label>
+                        <input type="number" id="bookingAdults" min="1" value="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingChildren">Children</label>
+                        <input type="number" id="bookingChildren" min="0" value="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookingRequests">Special Requests</label>
+                    <textarea id="bookingRequests" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
